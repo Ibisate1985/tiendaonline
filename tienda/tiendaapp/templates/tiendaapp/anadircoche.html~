@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Coche para la venta</title>
+	</head>
+	<body>
+		<h1>Añadir coche</h1>
+		<form method="POST"> {% csrf_token %}
+			{{ form.as_p }}
+			<button type="submit">Guardar</button>
+		</form>
+		<a href="{% url 'indice' %}">Volver</a>			
+	</body>
+</html>

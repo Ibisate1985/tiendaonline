@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>tienda online</title>
+	</head>
+	<body>
+<a href="{% url 'indice' %}">Volver </a>
+			<table border="2">
+				<tr>
+					<td>Nombre</td>
+					<td>Descripcion</td>
+					<td>Combustible</td>
+					<td>Precio</td>
+					<td>Concesionario</td>
+					<td>ubicación</td>
+				</tr>
+				
+					<tr>
+						<td>{{ caracteristicas.Marca }}</td>
+						<td>{{ caracteristicas.Modelo }}</td>
+						<td>{{ caracteristicas.Combustible }}</td>
+						<td>{{ caracteristicas.Precio }}</td>
+						<td>{{ caracteristicas.Vendedor }}</td>
+						<td>{{ caracteristicas.Vendedor.descripcion }}</td>
+					</tr>
+				
+			</table>	
+	{{ caracteristicas.Video|safe }}
+{% autoescape on %}
+    {{ caracteristicas.Video }}
+{% endautoescape %}
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>tienda online</title>
+	</head>
+	<body>
+		{% if listacoches %}
+			<table border="2">
+				<tr>
+					<td>Marca</td>
+					<td>Modelo</td>
+					<td>Combustible</td>
+					<td>Precio</td>
+					<td>Vendedor</td>
+					<td>Venta</td>
+					<td>Prestaciones</td>
+				</tr>
+				{% for Producto in listacoches %}
+					<tr>
+						<td>{{ Producto.Marca }}</td>
+						<td>{{ Producto.Modelo }}</td>
+						<td>{{ Producto.Combustible }}</td>
+						<td>{{ Producto.Precio }}</td>
+						<td><a href="{% url 'vendedor' Producto.Vendedor.id %}">web
+</a></td>
+		<td><a href="{% url 'anadircoche' %}">Añadir coche</a></td>
+<td><a href="{% url 'caracteristicas' Producto.id %}">Caracteristicas</a></td>
+
+					</tr>
+				{% endfor %}
+			</table>
+		{% else %}
+			<p>No hay coches</p>			
+		{% endif %}
+	</body>
+</html>

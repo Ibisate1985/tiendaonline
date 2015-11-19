@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>tienda online</title>
+	</head>
+	<body>
+<a href="{% url 'indice' %}">Volver </a>
+			<table border="2">
+				<tr>
+					<td>Nombre</td>
+					<td>Descripcion</td>
+				</tr>
+				
+					<tr>
+						<td>{{ vendedor.nombre }}</td>
+						<td>{{ vendedor.descripcion }}</td>
+					</tr>
+				
+			</table>			
+	</body>
+</html>

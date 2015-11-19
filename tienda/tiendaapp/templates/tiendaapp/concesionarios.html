@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>tienda online</title>
+	</head>
+	<body>
+<a href="{% url 'indice' %}>Volver </a>
+		{% if listacoches %}
+			<table border="2">
+				<tr>
+					<td>Nombre</td>
+					<td>Descripcion</td>
+				</tr>
+				{% for Producto in listacoches %}
+					<tr>
+						<td>{{ Vendedor.Nombre }}</td>
+						<td>{{ Vendedor.Descripcion }}</td>
+					</tr>
+				{% endfor %}
+			</table>
+		{% else %}
+			<p>No hay vendedores</p>			
+		{% endif %}
+
+	</body>
+</html>

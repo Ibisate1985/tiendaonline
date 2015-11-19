@@ -1,0 +1,96 @@
+!DOCTYPE html>
+<html>
+<body>
+<title>formulario</title><b><h3>Venta de vehiculos</b></h3>
+
+<form>
+Concesionario: <input type="text" name="Nombre" value="">Calle: <input type="text" name="apellidos" value="">
+<input type="submit" value="Submit">
+<input type="radio" name="sex" value="male">H<input type="radio" name="sex" value="female">M
+</form>
+
+
+<b>Fecha de registro</b><select>
+  <option value=>dia</option>
+  <option value=>1</option>
+  <option value=>2</option>
+  <option value=>3</option>
+  <option value=>4</option>
+  <option value=>5</option>
+  <option value=>6</option>
+  <option value=>7</option>
+  <option value=>8</option>
+  <option value=>9</option>
+  <option value=>10</option>
+  <option value=>11</option>
+  <option value=>12</option>
+  <option value=>13</option>
+  <option value=>14</option>
+  <option value=>15</option>
+  <option value=>16</option>
+  <option value=>17</option>
+  <option value=>18</option>
+  <option value=>19</option>
+  <option value=>20</option>
+  <option value=>21</option>
+  <option value=>22</option>
+  <option value=>23</option>
+  <option value=>24</option>
+  <option value=>25</option>
+  <option value=>26</option>
+  <option value=>27</option>
+  <option value=>28</option>
+  <option value=>29</option>
+  <option value=>30</option>
+  <option value=>31</option>
+</select>
+<select>
+  <option value=>Mes</option>
+  <option value=>Enero</option>
+  <option value=>Febrero</option>
+  <option value=>Marzo</option>
+  <option value=>Abril</option>
+  <option value=>Mayo</option>
+  <option value=>Junio</option>
+  <option value=>Julio</option>
+  <option value=>Agosto</option>
+  <option value=>Septiembre</option>
+  <option value=>Octubre</option>
+  <option value=>Noviembre</option>
+  <option value=>diciembre</option>
+</select>
+<select>
+  <option value=>Ano</option>
+  <option value=>1</option>
+  <option value=>2</option>
+  <option value=>3</option>
+  <option value=>4</option>
+  <option value=>5</option>
+  <option value=>6</option>
+  <option value=>7</option>
+  <option value=>8</option>
+  <option value=>9</option>
+</select><br>
+<b>Selecciona tipo de vehiculo para vender</b>
+<br>
+<form>
+<input type="checkbox">Turismo<br>
+<input type="checkbox">Ranchera<br>
+<input type="checkbox">4x4<br>
+<input type="checkbox">Furgoneta<br>
+<input type="checkbox">Camion<br>
+<input type="checkbox">Deportivo<br>
+<input type="checkbox">Autobus<br>
+<input type="checkbox">Adaptado<br>
+
+<b>Precio :</b><br>
+<input type="text" name="Nombre" value=""><br>
+<input type="button" name="Enviar"value="Enviar">
+<input type="button" name="Enviar"value="Restablecer"><br>
+<b>Pulsa el boton "enviar" para formalizar la venta o "restablecer" para limpiar el formulario.</b>
+
+</form>
+
+<p></p>
+
+</body>
