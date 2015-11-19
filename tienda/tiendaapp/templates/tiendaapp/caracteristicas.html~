@@ -21,12 +21,15 @@
 						<td>{{ caracteristicas.Precio }}</td>
 						<td>{{ caracteristicas.Vendedor }}</td>
 						<td>{{ caracteristicas.Vendedor.descripcion }}</td>
+                  <td> <img src="/{{caracteristicas.foto}}" width="400" height="200"></td>
+
+
 					</tr>
 				
 			</table>	
 	{{ caracteristicas.Video|safe }}
 {% autoescape on %}
-    {{ caracteristicas.Video }}
+    
 {% endautoescape %}
 	</body>
 </html>
