@@ -1,0 +1,20 @@
+body{background-image: url(estrella.gif);
+}
+img{
+	
+	width: 405px; 
+	height: 200px;
+}
+
+table{color:yellow;
+}
+
+.video1{
+	
+	width: 700px; 
+	height: 200px;
+}
+.pive1{
+float:right;
+overflow:hidden;
+}

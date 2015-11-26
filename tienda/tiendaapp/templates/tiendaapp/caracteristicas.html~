@@ -1,17 +1,20 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>tienda online</title>
+<link rel="stylesheet" type="text/css" href="{% static "css/caracteristicas.css" %}">
 	</head>
 	<body>
 <a href="{% url 'indice' %}">Volver </a>
-			<table border="2">
+			
+				<table>
 				<tr>
 					<td>Nombre</td>
 					<td>Descripcion</td>
 					<td>Combustible</td>
 					<td>Precio</td>
 					<td>Concesionario</td>
-					<td>ubicación</td>
+					<td>Ubicación</td>
 				</tr>
 				
 					<tr>
@@ -21,15 +24,21 @@
 						<td>{{ caracteristicas.Precio }}</td>
 						<td>{{ caracteristicas.Vendedor }}</td>
 						<td>{{ caracteristicas.Vendedor.descripcion }}</td>
-                  <td> <img src="/{{caracteristicas.foto}}" width="400" height="200"></td>
+              		<td> <img src="/{{caracteristicas.foto}}"</td>
+				 
 
 
 					</tr>
 				
-			</table>	
-	{{ caracteristicas.Video|safe }}
+			
+				
+</table>	
+ <div id="video" class="video1">{{ caracteristicas.Video|safe }}
 {% autoescape on %}
     
 {% endautoescape %}
+</div>
+<div id="pive" class="pive1"><img src="{% static "media/pive.jpg" %}"></div>
+
 	</body>
 </html>

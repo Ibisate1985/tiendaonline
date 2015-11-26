@@ -1,0 +1,17 @@
+body {
+	
+	background-image: url(coches.jpg);
+}
+partearriba{overflow:hidden;}
+h1{text-align:center;}
+.partearriba1{}
+.partearriba2{}			
+
+
+table{background-color: #DCDCDC;
+		text-align:center;
+      margin:auto;
+		float:left;}
+
+nav{float:left;
+margin-right:5em;}
