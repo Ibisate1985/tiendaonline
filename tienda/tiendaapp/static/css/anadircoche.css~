@@ -1,0 +1,7 @@
+title{text-align:center;
+margin:auto;}
+
+body{text-align:center;
+margin:auto;}
+img{width: 40em; 
+	height: 20em;}

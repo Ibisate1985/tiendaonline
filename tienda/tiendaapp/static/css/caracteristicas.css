@@ -9,7 +9,7 @@ img{
 table{color:yellow;
 }
 
-.video1{
+.video1{float:left;
 	
 	width: 700px; 
 	height: 200px;
@@ -17,4 +17,7 @@ table{color:yellow;
 .pive1{
 float:right;
 overflow:hidden;
+}
+.marca1{float:right;
+overflow:hidden;	
 }

@@ -1,6 +1,8 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>tienda online</title>
+<link rel="stylesheet" type="text/css" href="{% static "css/detallevendedor.css" %}">
 	</head>
 	<body>
 <a href="{% url 'indice' %}">Volver </a>
@@ -13,9 +15,9 @@
 					<tr>
 						<td>{{ vendedor.nombre }}</td>
 						<td>{{ vendedor.descripcion }}</td>
-						<td><a href="{% url 'registrate' Vendedor.registrate.id %}">registrate</a></td>
 					</tr>
 				
-			</table>			
+			</table>		
+<div id="marcas" class="marcas1"><img src="{% static "media/marcas.jpg" %}"></div>	
 	</body>
 </html>

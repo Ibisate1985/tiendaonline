@@ -1,6 +1,8 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>Coche para la venta</title>
+<link rel="stylesheet" type="text/css" href="{% static "css/anadircoche.css" %}">
 	</head>
 	<body>
 		<h1>Añadir coche</h1>

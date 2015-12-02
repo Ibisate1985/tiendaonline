@@ -1,6 +1,8 @@
+{% load staticfiles %}
 <html>
 	<head>
 		<title>Coche para la venta</title>
+<link rel="stylesheet" type="text/css" href="{% static "css/anadircoche.css" %}">
 	</head>
 	<body>
 		<h1>Añadir coche</h1>
@@ -8,6 +10,7 @@
 			{{ form.as_p }}
 			<button type="submit">Guardar</button>
 		</form>
-		<a href="{% url 'indice' %}">Volver</a>			
+		<a href="{% url 'indice' %}">Volver</a>	
+<div id="euros" class="euros1"><img src="{% static "media/euros.gif" %}"></div>		
 	</body>
 </html>

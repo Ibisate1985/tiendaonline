@@ -1,0 +1,9 @@
+body {
+	background-image: url(coche.jpg);}
+
+table{margin:auto;
+text-align:center;}
+
+img{
+	width: 79em; 
+	height: 40em;}
