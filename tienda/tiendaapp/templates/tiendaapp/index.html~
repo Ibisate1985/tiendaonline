@@ -1,11 +1,12 @@
 {% load staticfiles %}
 <html>
 	<head>
-		<title>tienda online</title>
+		<title>tienda online<title>
 <link rel="stylesheet" type="text/css" href="{% static "css/tiendaapp.css" %}">
 	</head>
 	<body>
-	<img src="{% static "media/fondo.jpg" %}">
+
+	
     
 		<h1>Compra tu coche</h1>
 	 
@@ -37,17 +38,20 @@
 
 
 		{% if listacoches %}
-    <div id="tabla1" class="tablaprincipal">
 			<table border="2">
-				<tr>
+ 
+				<tr id="cabecera">
 					<td>Marca</td>
 					<td>Modelo</td>
 					<td>Combustible</td>
 					<td>Precio</td>
 					<td>Vendedor</td>
+				{% if user.is_authenticated %}
 					<td>Venta</td>
+				{% endif %}
 					<td>Prestaciones</td>
 				</tr>
+
 				{% for Producto in listacoches %}
 					<tr>
 						<td>{{ Producto.Marca }}</td>
@@ -56,13 +60,15 @@
 						<td>{{ Producto.Precio }}</td>
 						<td><a href="{% url 'vendedor' Producto.Vendedor.id %}">web
 </a></td>
-		<td><a href="{% url 'anadircoche' %}">Añadir coche</a></td>
+					{% if user.is_authenticated %}		
+					<td><a href="{% url 'anadircoche' %}">Añadir coche</a></td>
+					{% endif %}
 <td><a href="{% url 'caracteristicas' Producto.id %}">Caracteristicas</a></td>
 
 					</tr>
 				{% endfor %}
 			</table>
-	</div>
+	
     </div>
 		{% else %}
 			<p>No hay coches</p>			

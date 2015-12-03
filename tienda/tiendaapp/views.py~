@@ -5,11 +5,12 @@ from tiendaapp.forms import anadircocheForm
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib.auth import login,logout,authenticate
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
 def indice(request):
-   listacoches = Producto.objects.all()
+   listacoches = Producto.objects.all().order_by('-Precio')
    return render(request, 'tiendaapp/index.html', {'listacoches': listacoches })
 
 
@@ -17,7 +18,7 @@ def vendedor(request,vendedor_id):
 	vendedor = get_object_or_404(Vendedor, pk = vendedor_id)
 	return render(request, 'tiendaapp/detallevendedor.html', {'vendedor': vendedor })
 
-
+@login_required
 def anadircoche(request):
 	if request.method == "POST":
 		form = anadircocheForm(request.POST,request.FILES)

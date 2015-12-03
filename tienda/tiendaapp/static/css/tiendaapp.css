@@ -2,16 +2,18 @@ body {
 	
 	background-image: url(coche.jpg);
 }
-partearriba{overflow:hidden;}
-h1{text-align:center;}
-.partearriba1{}
-.partearriba2{}			
 
 
+h1{text-align:center;
+color:#800000;}
+#cabecera{color:red;}
+
+			
 table{background-color: #DCDCDC;
 		text-align:center;
       margin:auto;
-		float:left;}
+		float:left;
+}
 
 nav{float:left;
 margin-right:5em;}
